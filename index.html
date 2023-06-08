@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+    body {
+        transition: background-color 0.5s;
+    }
+    .success {
+        background-color: lightgreen;
+    }
+    .failure {
+        background-color: red;
+    }
+    .massage {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        margin-top: 20px;
+    }
+    </style>
+  </head>
+  <body>
+      <script>
+          let username = prompt ("Masukan Username :");
+          let password = prompt ("Masukan Password :");
+          
+          if (Username === "Jidan" && Password === "1712") {
+              document.body.classList.add("success");
+              
+              document.write("<div class = 'massage'>Udah Masuk Nih </div>");
+              
+              document.body.classList.add("failure");
+              
+              document.write("<div class='massage'>Login gagal. silahkan coba lagi </div>");
+          }
+      </script>
+  </body>
+</html>
